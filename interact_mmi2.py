@@ -142,8 +142,12 @@ def main():
     print('开始和chatbot聊天，输入CTRL + Z以退出')
     
     text = input("user:")
+    i = 0
     while True:
         try:
+            if i == 20:
+                break
+            i = i+1
             if args.save_samples_path:
                 samples_file.write("user:{}\n".format(text))
             history.append(tokenizer.encode(text))
