@@ -142,10 +142,10 @@ def main():
     print('开始和chatbot聊天，输入CTRL + Z以退出')
     
     text = input("user:")
-    i = 0
+    i = 1
     while True:
         try:
-            if i == 20:
+            if i == 100:
                 break
             i = i+1
             if args.save_samples_path:
