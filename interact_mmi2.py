@@ -145,7 +145,7 @@ def main():
     i = 1
     while True:
         try:
-            if i == 5:
+            if i == 10:
                 break
             i = i+1
             if args.save_samples_path:
